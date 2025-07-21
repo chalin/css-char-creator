@@ -11,6 +11,7 @@
 .header {
   padding-bottom: 64px;
   width: 100%;
+  display: none;
 }
 
 .title {
@@ -51,12 +52,14 @@
   height: 40%;
   width: 100%;
   background-color: hsl(195deg, 20%, 86%);
+  /* z-index: 0; */
 }
 
 /* Desktop styles */
 
 @media (min-width: 600px) {
   .header {
+    display: block;
     width: 65%;
   }
 
