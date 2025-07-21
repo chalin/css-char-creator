@@ -24,3 +24,8 @@ body {
   padding: 0;
   border: 0;
 }
+
+:root {
+  --breakpoint-sm: 600px;
+}
+

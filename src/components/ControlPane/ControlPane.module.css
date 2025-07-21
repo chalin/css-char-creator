@@ -4,12 +4,8 @@
   padding-top: 18px;
   background-color: white;
   border-radius: 8px;
-  /*
-    HACK: Margin on an outer bound like this is
-    a little gross, but we haven't seen the tools
-    to deal with it yet!
-  */
-  margin-bottom: 32px;
+  min-width: 200px;
+  flex-shrink: 0;
 }
 
 .title {
@@ -24,4 +20,17 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+/* Desktop styles */
+@media (min-width: 600px) {
+  .controlPane {
+    min-width: auto;
+    /*
+    HACK: Margin on an outer bound like this is
+    a little gross, but we haven't seen the tools
+    to deal with it yet!
+    */
+    margin-bottom: 32px;
+  }
 }
