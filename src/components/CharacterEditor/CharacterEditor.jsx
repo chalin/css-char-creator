@@ -30,6 +30,7 @@ function App() {
 
   return (
     <main className={styles.characterEditor}>
+      <div className={styles.floorPerspective} />
 
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
         <header className={styles.header}>
@@ -89,8 +90,6 @@ function App() {
           clothesColor={clothesColor}
         />
       </div>
-
-      <div className={styles.floorPerspective} />
     </main>
   );
 }
